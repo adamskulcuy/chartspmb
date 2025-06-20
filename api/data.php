@@ -12,9 +12,9 @@
 
 // --- KONFIGURASI DATABASE ---
 $host = 'localhost';
-$db   = 'smkwimap_ppdb25';
-$user = 'smkwimap_root';
-$pass = 'Karsodrs123@';
+$db   = '';
+$user = 'root';
+$pass = '';
 // --------------------------
 
 header('Content-Type: application/json');
