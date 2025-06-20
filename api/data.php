@@ -12,7 +12,11 @@
 
 // --- KONFIGURASI DATABASE ---
 $host = 'localhost';
+<<<<<<< HEAD
 $db   = 'ppdb';
+=======
+$db   = '';
+>>>>>>> 731620511e65cf46219c1e55ca86e2ed7197b63f
 $user = 'root';
 $pass = '';
 // --------------------------
