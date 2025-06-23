@@ -135,7 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         doc.autoTable({
             startY: doc.autoTable.previous.finalY + 10,
-            head: [['Jurusan', 'Total', 'Sudah DU', 'Belum DU', 'Afirmasi', 'KIP', 'Reguler']],
+            head: [['Jurusan', 'Total', 'Sudah DU', 'Belum DU']],
+            // head: [['Jurusan', 'Total', 'Sudah DU', 'Belum DU', 'Afirmasi', 'KIP', 'Reguler']],
             body: detailedData.map(row => [
                 row.jurusan, row.total, row.sudah_du, row.belum_du
                 // row.jurusan, row.total, row.sudah_du, row.belum_du, row.afirmasi, row.kip, row.reguler
