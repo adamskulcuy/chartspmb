@@ -12,9 +12,11 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     
-    
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.1.0/dist/chartjs-plugin-datalabels.min.js"></script>-->
+    <!-- DITAMBAHKAN: Library untuk generate PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
 
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f0f2f5; }
@@ -96,6 +98,18 @@
                 </div>
             </section>
 
+            <!-- DITAMBAHKAN: Section 4 untuk Laporan -->
+            <section class="card">
+                <h3 class="text-xl font-semibold mb-4">Cetak Laporan PDF</h3>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button id="printTodayBtn" class="print-btn w-full sm:w-auto flex-1 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors disabled:bg-blue-400">
+                        Cetak Laporan Hari Ini
+                    </button>
+                    <button id="printAllBtn" class="print-btn w-full sm:w-auto flex-1 bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors disabled:bg-gray-600">
+                        Cetak Laporan Seluruhnya
+                    </button>
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER -->

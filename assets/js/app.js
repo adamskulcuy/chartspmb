@@ -4,7 +4,11 @@
  * untuk tata letak baru.
  */
 document.addEventListener('DOMContentLoaded', () => {
+    // Definisi jsPDF dari window object
+    const { jsPDF } = window.jspdf;
+
     
+
     Chart.defaults.font.family = 'Inter';
     Chart.defaults.plugins.legend.position = 'bottom';
     Chart.defaults.maintainAspectRatio = false; // Penting untuk layout responsif
@@ -15,11 +19,149 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctxJurusan = document.getElementById('chartJurusan')?.getContext('2d');
     const ctxJalur = document.getElementById('chartJalur')?.getContext('2d');
     const ctxDaftarUlang = document.getElementById('chartDaftarUlang')?.getContext('2d');
+    const refreshBtn = document.getElementById('refreshBtn');
+    const printTodayBtn = document.getElementById('printTodayBtn');
+    const printAllBtn = document.getElementById('printAllBtn');
 
     if (!ctxHarian || !ctxJurusan || !ctxJalur || !ctxDaftarUlang) {
         console.error("Satu atau lebih elemen canvas chart tidak ditemukan!");
         return;
     }
+
+    // Variabel global untuk menyimpan data terakhir dari API
+    let lastApiData = null;
+    let lastDataFetchTime = null;
+
+    // --- Fungsi Helper untuk memuat logo ---
+    async function getLogoBase64(url) {
+        try {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        } catch (error) {
+            console.error("Gagal memuat gambar logo:", error);
+            return null; // Kembalikan null jika gagal
+        }
+    }
+    
+    // --- Fungsi Generate PDF ---
+    async function generatePdf(scope) {
+        if (!lastApiData) {
+            alert('Data belum tersedia, silakan tunggu atau segarkan halaman.');
+            return;
+        }
+
+        // GANTI URL INI dengan URL logo sekolah Anda yang sebenarnya
+        const logoUrl = 'http://localhost/chartspmb/assets/img/logo%20manggala.png';
+        const logoBase64 = await getLogoBase64(logoUrl);
+
+
+        const doc = new jsPDF();
+        const JURUSAN_LIST = ['AKL', 'MPLB', 'ANM', 'DKV', 'TO'];
+        const today = new Date();
+        const todayString = today.toISOString().split('T')[0]; // Format 'YYYY-MM-DD'
+        
+        // Filter data berdasarkan scope (hari ini atau semua)
+        const dataToProcess = scope === 'today'
+            ? lastApiData.raw_data.filter(siswa => siswa.tgl_siswa === todayString)
+            : lastApiData.raw_data;
+
+        // --- Header PDF ---
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(16);
+        doc.text('Laporan SPMB SMK Widya Manggala Purbalingga', doc.internal.pageSize.getWidth() / 2, 20, { align: 'center' });
+        doc.setFontSize(14);
+        doc.text('Tahun Ajaran 2025/2026', doc.internal.pageSize.getWidth() / 2, 28, { align: 'center' });
+        
+        // Logo Placeholder
+        doc.setFontSize(10);
+        // Menambahkan gambar logo jika berhasil dimuat
+        if (logoBase64) {
+            doc.addImage(logoBase64, 'PNG', 10, 10, 15, 15);
+        } else {
+            // Fallback jika logo gagal dimuat
+            doc.rect(15, 15, 25, 25);
+            doc.setFontSize(10);
+            doc.text('LOGO', 27.5, 28, { align: 'center' });
+        }
+
+        // laporan harian atau semua
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(12);
+        doc.text(`Laporan ${scope === 'today' ? 'Harian' : 'Keseluruhan'} Pendaftar`, 15, 35);
+        doc.setFontSize(10);
+        doc.text(`Tanggal: ${today.toLocaleDateString('id-ID', {day: '2-digit', month: 'long', year: 'numeric'})}`, 15, 40);
+        
+        // Timestamps
+        doc.setFont('helvetica', 'italic');
+        doc.setFontSize(9);
+        const downloadTime = `Diunduh pada: ${today.toLocaleDateString('id-ID', {day: '2-digit', month: 'long', year: 'numeric'})} Pukul ${today.toLocaleTimeString('id-ID', {hour: '2-digit', minute: '2-digit'})} WIB`;
+        const updateTime = `Data terakhir update: ${lastDataFetchTime.toLocaleDateString('id-ID', {day: '2-digit', month: 'long', year: 'numeric'})} Pukul ${lastDataFetchTime.toLocaleTimeString('id-ID', {hour: '2-digit', minute: '2-digit'})} WIB`;
+        doc.text(downloadTime, 15, 45);
+        doc.text(updateTime, 15, 50);
+        
+        let detailedData = JURUSAN_LIST.map(jurusan => ({
+            jurusan: jurusan,
+            total: dataToProcess.filter(s => s.jurusan_singkat === jurusan).length,
+            sudah_du: dataToProcess.filter(s => s.jurusan_singkat === jurusan && s.status == 1).length,
+            belum_du: dataToProcess.filter(s => s.jurusan_singkat === jurusan && s.status == 0).length,
+            // afirmasi: dataToProcess.filter(s => s.jurusan_singkat === jurusan && s.kelas === 'AFIRMASI').length,
+            // kip: dataToProcess.filter(s => s.jurusan_singkat === jurusan && s.kelas === 'KIP').length,
+            // reguler: dataToProcess.filter(s => s.jurusan_singkat === jurusan && (s.kelas === 'REGULER' || s.kelas === 'Belum Memilih')).length,
+        }));
+
+        // --- Tabel Ringkasan Total (1 baris) ---
+        const totalPendaftar = dataToProcess.filter(s => s.status !== null).length;
+        const totalSudahDU = dataToProcess.filter(s => s.status == 1).length;
+        const totalBelumDU = dataToProcess.filter(s => s.status == 0).length;
+        doc.autoTable({
+            startY: 60,
+            head: [['Total Pendaftar', 'Sudah Daftar Ulang', 'Belum Daftar Ulang']],
+            body: [
+                [
+                    { content: `${totalPendaftar}`, styles: { fontStyle: 'bold', fontSize: 20, halign: 'center'} },
+                    { content: `${totalSudahDU}`, styles: { fontStyle: 'bold', fontSize: 20, halign: 'center' } },
+                    { content: `${totalBelumDU}`, styles: { fontStyle: 'bold', fontSize: 20, halign: 'center' } }
+                ]
+            ],
+            theme: 'grid',
+            headStyles: { fillColor: [41, 128, 185], fontStyle: 'bold' },
+        });
+        
+        doc.autoTable({
+            startY: doc.autoTable.previous.finalY + 10,
+            head: [['Jurusan', 'Total', 'Sudah DU', 'Belum DU', 'Afirmasi', 'KIP', 'Reguler']],
+            body: detailedData.map(row => [
+                row.jurusan, row.total, row.sudah_du, row.belum_du
+                // row.jurusan, row.total, row.sudah_du, row.belum_du, row.afirmasi, row.kip, row.reguler
+            ]),
+            theme: 'striped',
+            headStyles: { fillColor: [39, 174, 96] },
+        });
+        
+        // --- Footer PDF ---
+        const pageCount = doc.internal.getNumberOfPages();
+        for(let i = 1; i <= pageCount; i++) {
+            doc.setPage(i);
+            doc.setFont('helvetica', 'normal');
+            doc.setFontSize(10);
+            doc.text('Petugas Piket, Tim Data, dan IT', doc.internal.pageSize.getWidth() / 2, doc.internal.pageSize.getHeight() - 10, { align: 'center' });
+        }
+
+        // --- Simpan PDF ---
+        const fileName = `Laporan_SPMB_${scope}_${todayString}.pdf`;
+        doc.save(fileName);
+    }
+    
+    // --- Event Listeners untuk Tombol Cetak ---
+    printTodayBtn.addEventListener('click', () => generatePdf('today'));
+    printAllBtn.addEventListener('click', () => generatePdf('all'));
+
 
     // Chart BARU: Pendaftar 7 Hari Terakhir
     const chartHarian = new Chart(ctxHarian, {
@@ -92,6 +234,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('api/data.php');
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const data = await response.json();
+
+            // Simpan data dan waktu fetch untuk digunakan oleh PDF
+            lastApiData = data;
+            lastDataFetchTime = new Date();
 
             // 1. Update Chart Harian
             chartHarian.data.labels = data.pendaftar_harian.labels;

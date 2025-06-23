@@ -1,0 +1,1456 @@
+{
+  "pendaftar_harian": {
+    "labels": [
+      "15 Jun",
+      "16 Jun",
+      "17 Jun",
+      "18 Jun",
+      "19 Jun",
+      "20 Jun",
+      "21 Jun"
+    ],
+    "data": [7, 49, 46, 37, 25, 9, 0]
+  },
+  "pendaftar_per_jurusan": [
+    {
+      "jurusan_singkat": "AKL",
+      "jumlah": "37"
+    },
+    {
+      "jurusan_singkat": "ANM",
+      "jumlah": "14"
+    },
+    {
+      "jurusan_singkat": "DKV",
+      "jumlah": "31"
+    },
+    {
+      "jurusan_singkat": "Lainnya",
+      "jumlah": "8"
+    },
+    {
+      "jurusan_singkat": "MPLB",
+      "jumlah": "78"
+    },
+    {
+      "jurusan_singkat": "TO",
+      "jumlah": "59"
+    }
+  ],
+  "pendaftar_per_jalur": [
+    {
+      "jalur": "AFIRMASI",
+      "jumlah": "31"
+    },
+    {
+      "jalur": "Belum Memilih",
+      "jumlah": "150"
+    },
+    {
+      "jalur": "KIP",
+      "jumlah": "22"
+    },
+    {
+      "jalur": "REGULER",
+      "jumlah": "24"
+    }
+  ],
+  "status_daftar_ulang": {
+    "sudah": "123",
+    "belum": "104"
+  },
+  "rekap_asal_sekolah": [
+    {
+      "asal_sekolah": "SMP NEGERI 2 KALIMANAH",
+      "jumlah": "37"
+    },
+    {
+      "asal_sekolah": "SMP NEGERI 1 KALIMANAH",
+      "jumlah": "18"
+    },
+    {
+      "asal_sekolah": "SMP NEGERI 2 PADAMARA",
+      "jumlah": "10"
+    },
+    {
+      "asal_sekolah": "SMP NEGERI 3 KALIBAGOR",
+      "jumlah": "9"
+    },
+    {
+      "asal_sekolah": "SMP NEGERI 1 PADAMARA",
+      "jumlah": "8"
+    }
+  ],
+  "summary": {
+    "total_pendaftar": 227,
+    "total_sudah_daftar_ulang": 123,
+    "total_belum_daftar_ulang": 104,
+    "jalur_afirmasi": 31,
+    "jalur_kip": 22,
+    "jalur_reguler": 24
+  },
+  "raw_data": [
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-10",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-10",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-10",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-11",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-12",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-12",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-13",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": null,
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-14",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "0",
+      "kelas": "KIP",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-15",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-16",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "KIP",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "KIP",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "KIP",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-17",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-18",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "Lainnya"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-19",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "TO"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "0",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "MPLB"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "1",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "0",
+      "kelas": "AFIRMASI",
+      "jurusan_singkat": "ANM"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "AKL"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "1",
+      "kelas": "REGULER",
+      "jurusan_singkat": "DKV"
+    },
+    {
+      "tgl_siswa": "2025-06-20",
+      "status": "0",
+      "kelas": "Belum Memilih",
+      "jurusan_singkat": "ANM"
+    }
+  ]
+}

@@ -12,11 +12,7 @@
 
 // --- KONFIGURASI DATABASE ---
 $host = 'localhost';
-<<<<<<< HEAD
-$db   = 'ppdb';
-=======
-$db   = '';
->>>>>>> 731620511e65cf46219c1e55ca86e2ed7197b63f
+$db   = 'spmb21';
 $user = 'root';
 $pass = '';
 // --------------------------
@@ -113,6 +109,7 @@ $jalurData = $pdo->query("
     FROM siswa GROUP BY jalur
 ")->fetchAll(PDO::FETCH_KEY_PAIR);
 
+
 $response['summary'] = [
     'total_pendaftar' => (int)$totalPendaftar,
     'total_sudah_daftar_ulang' => (int)($response['status_daftar_ulang']['sudah'] ?? 0),
@@ -121,6 +118,29 @@ $response['summary'] = [
     'jalur_kip' => (int)($jalurData['KIP'] ?? 0),
     'jalur_reguler' => (int)($jalurData['REGULER'] ?? 0),
 ];
+
+$stmt = $pdo->query("
+    SELECT 
+        tgl_siswa,
+        status,
+        IFNULL(NULLIF(kelas, ''), 'Belum Memilih') as kelas,
+        CASE jurusan
+            WHEN '01' THEN 'AKL'
+            WHEN '02' THEN 'MPLB'
+            WHEN '03' THEN 'ANM'
+            WHEN '04' THEN 'DKV'
+            WHEN '05' THEN 'TO'
+            WHEN 'AKUNTANSI DAN KEUANGAN LEMBAGA' THEN 'AKL'
+            WHEN 'MANAJEMEN PERKANTORAN DAN LAYANAN BISNIS' THEN 'MPLB'
+            WHEN 'ANIMASI' THEN 'ANM'
+            WHEN 'DESAIN KOMUNIKASI VISUAL' THEN 'DKV'
+            WHEN 'TEKNIK OTOMOTIF (TEKNIK SEPEDA MOTOR)' THEN 'TO'
+            ELSE 'Lainnya'
+        END as jurusan_singkat
+    FROM siswa
+");
+$response['raw_data'] = $stmt->fetchAll();
+
 
 echo json_encode($response, JSON_PRETTY_PRINT);
 ?>
